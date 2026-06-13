@@ -39,7 +39,7 @@ TW_MAX_BRIGHTNESS := 1000
 TW_DEFAULT_BRIGHTNESS := 300
 TW_FRAMERATE := 120
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TW_BRIGHTNESS_PATH := "/sys/devices/platform/panel_drv_0/backlight/panel/brightness"
+TW_BRIGHTNESS_PATH := /sys/devices/platform/panel_drv_0/backlight/panel/brightness
 TARGET_USES_VULKAN := true
 
 # Kernel - prebuilt
@@ -112,14 +112,14 @@ TW_INCLUDE_LPTOOLS := true
 TW_EXCLUDE_APEX := true
 TW_NO_SCREEN_BLANK := true
 RECOVERY_SDCARD_ON_DATA := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_INPUT_BLACKLIST := hbtp_vm
 TW_USE_TOOLBOX := true
 TW_NO_BIND_SYSTEM := true
 TW_EXTRA_LANGUAGES := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 TW_USE_LEGACY_BATTERY_SERVICES := true
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone36/temp"
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone36/temp
 
 # Vendor Modules
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
