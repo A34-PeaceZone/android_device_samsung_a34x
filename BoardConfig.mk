@@ -153,5 +153,3 @@ TW_USE_NEW_MINADBD := true
 
 # Version
 TW_DEVICE_VERSION := SavedByLight a34x
-OF_VERSION := R12 1.0
-OF_MAINTAINER := SavedByLight
